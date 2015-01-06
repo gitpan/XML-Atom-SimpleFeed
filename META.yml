@@ -1,21 +1,29 @@
 ---
-name: XML-Atom-SimpleFeed
-version: 0.86
+abstract: 'No-fuss generation of Atom syndication feeds'
 author:
   - 'Aristotle Pagaltzis <pagaltzis@gmx.de>'
-abstract: No-fuss generation of Atom syndication feeds
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  perl: 5.8.1
 build_requires:
-  Test::More: 0
-provides:
-  XML::Atom::SimpleFeed:
-    file: lib/XML/Atom/SimpleFeed.pm
-    version: 0.86
-generated_by: Module::Build version 0.33
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0.88
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 5.030, CPAN::Meta::Converter version 2.143240'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
+name: XML-Atom-SimpleFeed
+requires:
+  Carp: 0
+  Encode: 0
+  POSIX: 0
+  perl: 5.008001
+  strict: 0
+  warnings: 0
+resources:
+  bugtracker: http://github.com/ap/XML-Atom-SimpleFeed/issues
+  homepage: http://github.com/ap/XML-Atom-SimpleFeed
+  repository: git://github.com/ap/XML-Atom-SimpleFeed
+version: 0.861
